@@ -1,5 +1,6 @@
 import setuptools
 import versioneer
+import warnings
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
@@ -21,3 +22,7 @@ setuptools.setup(
     ],
     python_requires='>=3.7',
 )
+
+import images
+from pathlib import Path
+warnings.warn(f'######################################################{Path(images.__file__).absolute()}')
