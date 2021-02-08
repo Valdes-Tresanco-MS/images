@@ -22,7 +22,3 @@ setuptools.setup(
     ],
     python_requires='>=3.7',
 )
-
-import images
-from pathlib import Path
-warnings.warn(f'######################################################{Path(images.__file__).absolute()}')
